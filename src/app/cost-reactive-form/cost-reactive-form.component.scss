@@ -1,0 +1,12 @@
+:host {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
