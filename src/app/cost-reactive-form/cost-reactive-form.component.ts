@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { CostsStoreFacadeService } from '../cost-store-facade/costs-store-facade.service';
+import { Cost } from '../models';
 
 @Component({
   selector: 'app-cost-reactive-form',
@@ -32,6 +34,9 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./cost-reactive-form.component.scss']
 })
 export class CostReactiveFormComponent {
+  @Output()
+  public onAddCost = new EventEmitter<Cost>();
+
   public costForm = new FormGroup({
     title: new FormControl(''),
     category: new FormControl(''),
@@ -39,6 +44,7 @@ export class CostReactiveFormComponent {
   });
 
   public addCost(): void {
-    console.log('dodaliśmy hasjy:', this.costForm.value);
+    this.onAddCost.emit(this.costForm.value as Cost);
+    this.costForm.reset();
   }
 }
