@@ -1,0 +1,5 @@
+<div class="cost-container" *ngIf="!!cost">
+  <h3 class="cost-title">{{ cost.title }}</h3>
+  <span class="cost-category">{{ cost.category }}</span>
+  <span class="cost-price">{{cost.price | currency}}</span>
+</div>

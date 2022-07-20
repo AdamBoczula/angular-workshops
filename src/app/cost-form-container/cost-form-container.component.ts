@@ -6,12 +6,12 @@ import { Cost } from '../models';
 @Component({
   selector: 'app-cost-form-container',
   template: `
-    <app-cost-reactive-form (onAddCost)="addCost($event)">
-    </app-cost-reactive-form>
+    <!-- <app-cost-reactive-form (onAddCost)="addCost($event)">
+    </app-cost-reactive-form> -->
 
-    <p *ngFor="let cost of costs$ | async">
-      {{cost | json}}
-    </p>
+  <app-cost-template-driven-form (onAddCost)="addCost($event)"></app-cost-template-driven-form>
+
+  <app-budget-list [costs]="(costs$ | async) ?? []"></app-budget-list>
 `,
   styleUrls: ['./cost-form-container.component.scss']
 })
