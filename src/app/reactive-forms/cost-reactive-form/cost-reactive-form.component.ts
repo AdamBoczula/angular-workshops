@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Cost } from '../models';
+import { Cost } from 'src/app/models';
 
 @Component({
   selector: 'app-cost-reactive-form',

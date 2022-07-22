@@ -4,10 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <h1>Zapisywanie wydatków</h1>
-    <!-- Formularz -->
-    <app-cost-form-container></app-cost-form-container>
-
-    <!-- lista wydatków -->
+    <app-page-wrapper></app-page-wrapper>
   `,
   styleUrls: ['./app.component.scss']
 })

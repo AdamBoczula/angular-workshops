@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Cost } from '../models';
+import { Cost } from 'src/app/models';
 
 @Component({
   selector: 'app-cost-template-driven-form',
