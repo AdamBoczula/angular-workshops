@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "budget-planner:build:production",
+            "firebaseProject": "budget-planner-live-coding",
+            "firebaseHostingSite": "budget-planner-live-coding"
+          }
         }
       }
     }

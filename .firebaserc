@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "budget-planner-live-coding": {
+      "hosting": {
+        "budget-planner": [
+          "budget-planner-live-coding"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "budget-planner-live-coding"
+  }
+}

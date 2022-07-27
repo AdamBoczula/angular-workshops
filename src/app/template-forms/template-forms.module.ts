@@ -7,12 +7,9 @@ import { TemplateFormsRoutingModule } from './template-forms-routing.module';
 
 
 @NgModule({
-  declarations: [
-  ],
   imports: [
     CommonModule,
     TemplateFormsRoutingModule,
-    FormsModule,
     UiModule,
   ]
 })

@@ -2,17 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   template: `
-    <p>
-      login works!
-    </p>
+    <app-login-forms></app-login-forms>
   `,
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class LoginComponent {
 
 }
